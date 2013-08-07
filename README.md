@@ -1,4 +1,4 @@
-# A Lineman JS Template using Batman
+# A Lineman JS Template using Batman JS
 
 **This is very much a work in progress as I attempt to grok Batman, PR's welcome :)**
 
