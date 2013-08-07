@@ -1,0 +1,18 @@
+<!DOCTYPE html>
+<html ng-app="app">
+  <head>
+    <title><%= pkg.name %></title>
+    <link rel="stylesheet" type="text/css" href="css/app.css" media="all" />
+  </head>
+  <body>
+    <div data-yield="main"></div>
+    <div id="batman">
+      <span>BatmanApp</span>
+      <code>powered by</code><br />
+      <img src="/img/batman.png" />
+      <input type="text" data-bind="window.BatmanApp.mission"/>
+    </div>
+
+    <script type="text/javascript" src="js/app.js"></script>
+  </body>
+</html>
