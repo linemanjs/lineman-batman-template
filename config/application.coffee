@@ -19,8 +19,7 @@ module.exports = require(process.env["LINEMAN_MAIN"]).config.extend("application
 
   # swaps concat_sourcemap in place of vanilla concat
   appendTasks:
-    dev:    ["copy:batman_views_dev"]
-    common: ["concat_sourcemap"]
+    common: ["copy:batman_views_dev", "concat_sourcemap"]
     dist:   ["copy:batman_views_dist"]
 
   # for copying batmans view templates into the lineman directories
