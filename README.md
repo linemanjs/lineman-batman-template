@@ -6,7 +6,7 @@ This is a project template for [BatmanJS](http://batmanjs.org/) applications usi
 
 It includes the following features:
 
-1. Template Copying into `./generated/app/views/*` and `./dist/app/views/*` via `grunt-contrib-copy`
+1. Template Precompilation into Batmans View.store using grunt-batman-templates
 2. The simple BatmanJS example that you get with `batman new`
 3. Auto generated [sourcemaps](http://www.html5rocks.com/en/tutorials/developertools/sourcemaps/) with inlined sources via [grunt-concat-sourcemap](https://github.com/kozy4324/grunt-concat-sourcemap) (you'll need to [enable sourcemaps](http://cl.ly/image/1d0X2z2u1E3b) in Firefox/Chrome to see this) (only available in dev mode)
 4. [Unit Tests](https://github.com/davemo/lineman-batman-template/tree/master/spec) via `lineman spec`
@@ -26,7 +26,6 @@ It includes the following features:
 
 # Future/Desired Features
 
-1. True template precompilation that inject template strings into Batmans View Store object
-2. A more robust example using auth, linemans fake server for API stubs, and complex view rendering
+1. A more robust example using auth, linemans fake server for API stubs, and complex view rendering
 
 Hopefully this helps you get up and running with BatmanJS!
