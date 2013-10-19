@@ -12,12 +12,22 @@
 #
 module.exports = require(process.env["LINEMAN_MAIN"]).config.extend("files",
   js:
-    vendor: ["vendor/js/jquery.js", "vendor/js/batman.js", "vendor/js/**/*.js"]
+    vendor: [
+      "vendor/js/underscore.js"
+      "vendor/js/extend.js"
+      "vendor/js/jquery.js"
+      "vendor/js/batman.js"
+      "vendor/js/**/*.js"
+    ]
 
   coffee:
-    app: ["app/js/app.coffee", "app/js/**/*.coffee"]
+    app: [
+      "config/extend_ext.coffee"
+      "app/js/app.coffee"
+      "app/js/**/*.coffee"
+    ]
 
-  batman_html: ["app/html/**/*.html"]
+  batman_html: "app/html/**/*.html"
   batman_viewstore: "generated/batman/view-store.js"
 
   less:

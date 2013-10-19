@@ -1,0 +1,39 @@
+<div class="panel panel-default">
+  <div class="panel-heading">
+    <h4 class="panel-title" data-bind="currentUser.team.name | append 'Dashboard'"></h4>
+  </div>
+  <div class="panel-body">
+    <div class="">
+      <div class="alert alert-warning" data-hideif="matches.length">No Matches to record!</div>
+      <div data-showif="matches.length">Record your matches below!</div>
+      <ul class="list-group">
+        <div class="" data-showif="matches.length" class="offset1" data-foreach-match="matches">
+          <li class="list-group-item">
+            <form data-formfor="match" data-event-submit="updateMatch">
+              <div data-showif="match.isTeamOneCurrent">
+                <div data-bind="match.opposingTeam.name"></div>
+                <div class="input-group">
+                  <span class="input-group-addon">My Score:</span
+                  <input type="text" class="form-control" data-bind="match.team_one_score" />
+                  <span class="input-group-addon">Their Score:</span>
+                  <input type="text" class="form-control" data-bind="match.team_two_score" />
+                </div>
+              </div>
+              <div data-hideif="match.isTeamOneCurrent">
+                <div data-bind="match.opposingTeam.name"></div>
+                <div class="input-group">
+                  <span class="input-group-addon">My Score:</span>
+                  <input id="team_two_score" type="text" class="form-control" data-bind="match.team_two_score" />
+                  <span class="input-group-addon">Their Score:</span>
+                  <input id="team_one_score" type="text" class="form-control" data-bind="match.team_one_score" />
+                </div>
+              </div>
+              <input type="submit" class="btn" value="Submit"/>
+            </form>
+          </li>
+        </div>
+      </ul>
+    </div>
+  </div>
+</div>
+

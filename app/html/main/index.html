@@ -1,0 +1,15 @@
+<div class="span10">
+  <h1 class="span9">Welcome to the Foosball Ladder</h1>
+  <div class="span9"><p>Hello!: <span data-bind="currentUser.email"></span></p></div>
+
+  <div class="span9" data-partial="shared/_team_dashboard"></div>
+  <table class="table table-bordered table-striped">
+    <tr><td>#</td><td>Team</td><td>Rating</td><td>Challenge!</td></tr>
+    <tr data-foreach-team="teams" data-addclass-success="currentUser.team_id | equals team.id">
+      <td><span data-bind="indexOf[team]"></span></td>
+      <td><a data-route="routes.teams[team]" data-bind="team.name"></a></td>
+      <td><span data-bind="team.rating"></span></td>
+      <td><button data-showif="showChallengeButton[team]" type="button" class="btn" data-event-click="challengePushed">Challenge</button></td>
+    </tr>
+  </table>
+</div>

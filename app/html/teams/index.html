@@ -1,0 +1,15 @@
+<div class="span10">
+	<h1 class="span9">Teams</h1>
+	<div class="span6">
+		<div class="row-fluid">
+			<div class="btn-group pull-right">
+				<button type="button" class="btn btn-default" data-route="routes.teams.new">Add Team</button>
+			</div>
+		</div>
+		<ul class="list-group">
+			<div data-foreach-team="teams">
+				<li class="list-group-item"><a data-route="routes.teams[team]" data-bind="team.name"></a></li>
+			</div>
+		</ul>
+	</div>
+</div>

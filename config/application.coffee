@@ -8,6 +8,9 @@ module.exports = require(process.env["LINEMAN_MAIN"]).config.extend("application
 
   # html5push state simulation
   server:
+    apiProxy:
+      enabled: true
+      port: 4000
     pushState: false
 
   # configure lineman to load additional tasks form npm

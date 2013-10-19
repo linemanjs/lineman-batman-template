@@ -1,9 +1,8 @@
-class BatmanApp extends Batman.App
-  @set 'mission', 'fight crime'
+def "FoosballLadder",
+  class BatmanApp extends Batman.App
+    @resources 'matches'
+    @resources 'teams'
+    @resources 'users'
 
-  # Set the root route to ExamplesController#index.
-  @root 'examples#index'
+    @root 'main#index'
 
-# Make BatmanApp available in the global namespace so it can be used
-# as a namespace and bound to in views.
-window.BatmanApp = BatmanApp
