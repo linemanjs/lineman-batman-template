@@ -11,7 +11,7 @@
     "grunt": "~0.4.1",
     "grunt-concat-sourcemap": "~0.3.0",
     "grunt-batman-templates": "~0.1.0",
-    "lineman": "~0.14.1"
+    "lineman": "0.15.1"
   },
   "engines": {
     "node": "~>0.10.5",
